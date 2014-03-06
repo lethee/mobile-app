@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>네이버지도</title>
+  <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+  <style type="text/css">
+    div[data-role=controlgroup] { text-align: center; }
+    #map_canvas { margin: 0 -15px; height: 200px;}
+  </style>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="jquery.mobile-1.3.2.min.js"></script>
+  <script src="modernizr.min.js"></script>
+  <script src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=3641155b496317517f9e58730f82d184"></script>
+  <script>
+  // 네이버 지도 API 레퍼런스
+  // http://dev.naver.com/openapi/apis/map/javascript_2_0/example
+
+  var sejong_statue_loc = {
+    latitude: 37.572816,
+    longitude: 126.976877
+  };
+
+  var seoul_loc = {
+    latitude: 37.566351,
+    longitude: 126.977921
+  };
+
+  var jeju_loc = {
+    latitude: 33.500179,
+    longitude: 126.532288
+  };
+
+  var controller = {
+    map: null,
+    init: function(position) {
+      var map_height = window.innerHeight - $('#map_canvas').offset().top;
+      $('#map_canvas').height(map_height);
+
+      var latit = sejong_statue_loc.latitude;
+      var longi = sejong_statue_loc.longitude;
+
+      controller.map = new nhn.api.map.Map(
+        document.getElementById('map_canvas'), 
+        { 
+          point : new nhn.api.map.LatLng(latit, longi),
+          zoom : 13,
+          enableWheelZoom : true,
+          enableDragPan : true,
+          enableDblClickZoom : false,
+          mapMode : 0,
+          activateTrafficMap : false,
+          activateBicycleMap : false,
+          minMaxLevel : [ 1, 14 ],
+        });
+    },
+
+    show_seoul: function() {
+      var latit = seoul_loc.latitude;
+      var longi = seoul_loc.longitude;
+
+      var seoul = new nhn.api.map.LatLng(latit, longi);
+      controller.map.setCenter(seoul);
+      controller.map.setLevel(6);
+    },
+
+    show_jeju: function() {
+      var latit = jeju_loc.latitude;
+      var longi = jeju_loc.longitude;
+
+      var jeju = new nhn.api.map.LatLng(latit, longi);
+      controller.map.setCenter(jeju);
+      controller.map.setLevel(6);
+    },
+
+    show_current_loc: function() {
+      if (Modernizr.geolocation) {
+        $.mobile.loading( 'show', { text: "위치확인중" });
+        
+        navigator.geolocation.getCurrentPosition(
+          controller.show_current_loc_callback, 
+          null, 
+          {enableHighAccuracy: true});
+      }
+    },
+
+    show_current_loc_callback: function(position) {
+      $.mobile.loading('hide');
+
+      var latit = position.coords.latitude;
+      var longi = position.coords.longitude;
+
+      var loc = new nhn.api.map.LatLng(latit, longi);
+      controller.map.setCenter(loc);
+      controller.map.setLevel(10);
+    }
+  };
+
+  $(document).on('pageshow', controller.init);
+
+  $(document).on('tap', '#show_current_button', controller.show_current_loc);
+  $(document).on('tap', '#show_seoul_button', controller.show_seoul);
+  $(document).on('tap', '#show_jeju_button', controller.show_jeju);
+  </script>
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>네이버지도</h1>
+    </div>
+    <div data-role="content">
+      <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+        <span id="show_current_button" data-role="button">현재위치</span>
+        <span id="show_seoul_button" data-role="button">서울</span>
+        <span id="show_jeju_button" data-role="button">제주</span>
+      </div>
+      <div id="map_canvas"></div>
+    </div>
+  </div>
+</body>
+</html>

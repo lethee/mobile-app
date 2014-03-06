@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CF25140168FD8EA00522A5A /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EC1E147B836000505BB5 /* libstdc++.6.dylib */; };
+		0CF25141168FD8F800522A5A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EC22147B837500505BB5 /* libsqlite3.dylib */; };
+		0CF25142168FD90500522A5A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EC20147B836C00505BB5 /* libxml2.dylib */; };
+		2B66EB49147B7E2A00505BB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EB48147B7E2A00505BB5 /* UIKit.framework */; };
+		2B66EB4B147B7E2A00505BB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EB4A147B7E2A00505BB5 /* Foundation.framework */; };
+		2B66EB4D147B7E2A00505BB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EB4C147B7E2A00505BB5 /* CoreGraphics.framework */; };
+		2B66EB53147B7E2A00505BB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B66EB51147B7E2A00505BB5 /* InfoPlist.strings */; };
+		2B66EB55147B7E2A00505BB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66EB54147B7E2A00505BB5 /* main.m */; };
+		2B66EB59147B7E2A00505BB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66EB58147B7E2A00505BB5 /* AppDelegate.m */; };
+		2B66EB5C147B7E2A00505BB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66EB5B147B7E2A00505BB5 /* ViewController.m */; };
+		2B66EB5F147B7E2A00505BB5 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B66EB5D147B7E2A00505BB5 /* ViewController_iPhone.xib */; };
+		2B66EB62147B7E2A00505BB5 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B66EB60147B7E2A00505BB5 /* ViewController_iPad.xib */; };
+		2B66EC14147B829C00505BB5 /* custom_poi_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B66EC11147B829C00505BB5 /* custom_poi_marker.png */; };
+		2B66EC15147B829C00505BB5 /* custom_poi_marker_end.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B66EC12147B829C00505BB5 /* custom_poi_marker_end.png */; };
+		2B66EC16147B829C00505BB5 /* custom_poi_marker_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B66EC13147B829C00505BB5 /* custom_poi_marker_start.png */; };
+		2B66EC19147B834100505BB5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EC17147B830D00505BB5 /* SystemConfiguration.framework */; };
+		2B66EC1B147B834A00505BB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EC1A147B834A00505BB5 /* CoreLocation.framework */; };
+		2B66EC1D147B835200505BB5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EC1C147B835200505BB5 /* QuartzCore.framework */; };
+		2B66EC25147B837F00505BB5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B66EC24147B837F00505BB5 /* OpenGLES.framework */; };
+		2B7BD9C114ED0DCC0020F576 /* DaumMapSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BD9C014ED0DCC0020F576 /* DaumMapSampleViewController.m */; };
+		2B7BD9C514ED0DF80020F576 /* MapPOIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BD9C414ED0DF80020F576 /* MapPOIDetailViewController.m */; };
+		2B93BA81147E435500CBEE36 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B93BA80147E435500CBEE36 /* Icon.png */; };
+		2BBE1C8B162424EB002DAEAF /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBE1C77162424EB002DAEAF /* DaumMap.framework */; };
+		2BBE1C8C162424EB002DAEAF /* copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C79162424EB002DAEAF /* copyright.png */; };
+		2BBE1C8D162424EB002DAEAF /* detail_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C7A162424EB002DAEAF /* detail_button.png */; };
+		2BBE1C8E162424EB002DAEAF /* info_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C7B162424EB002DAEAF /* info_box.png */; };
+		2BBE1C8F162424EB002DAEAF /* info_box_tail.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C7C162424EB002DAEAF /* info_box_tail.png */; };
+		2BBE1C90162424EB002DAEAF /* map_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C7D162424EB002DAEAF /* map_pin.png */; };
+		2BBE1C91162424EB002DAEAF /* map_pin_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C7E162424EB002DAEAF /* map_pin_custom.png */; };
+		2BBE1C92162424EB002DAEAF /* map_pin_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C7F162424EB002DAEAF /* map_pin_red.png */; };
+		2BBE1C93162424EB002DAEAF /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C80162424EB002DAEAF /* map_pin_shadow.png */; };
+		2BBE1C94162424EB002DAEAF /* map_pinup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C81162424EB002DAEAF /* map_pinup.png */; };
+		2BBE1C95162424EB002DAEAF /* map_pinup_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C82162424EB002DAEAF /* map_pinup_custom.png */; };
+		2BBE1C96162424EB002DAEAF /* map_present.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C83162424EB002DAEAF /* map_present.png */; };
+		2BBE1C97162424EB002DAEAF /* map_present_background_update.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C84162424EB002DAEAF /* map_present_background_update.png */; };
+		2BBE1C98162424EB002DAEAF /* map_present_direction.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C85162424EB002DAEAF /* map_present_direction.png */; };
+		2BBE1C99162424EB002DAEAF /* map_present_tracking.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C86162424EB002DAEAF /* map_present_tracking.png */; };
+		2BBE1C9A162424EB002DAEAF /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C87162424EB002DAEAF /* noimage.png */; };
+		2BBE1C9B162424EB002DAEAF /* noimage256.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C88162424EB002DAEAF /* noimage256.png */; };
+		2BBE1C9C162424EB002DAEAF /* point_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C89162424EB002DAEAF /* point_sprite.png */; };
+		2BBE1C9D162424EB002DAEAF /* shadow_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C8A162424EB002DAEAF /* shadow_balloon.png */; };
+		2BBE1CA016243307002DAEAF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C9E16243307002DAEAF /* Default-568h@2x.png */; };
+		2BBE1CA116243307002DAEAF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE1C9F16243307002DAEAF /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B66EB44147B7E2A00505BB5 /* DaumMapLibrarySample_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaumMapLibrarySample_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B66EB48147B7E2A00505BB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B66EB4A147B7E2A00505BB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B66EB4C147B7E2A00505BB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B66EB50147B7E2A00505BB5 /* DaumMapLibrarySample_iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaumMapLibrarySample_iOS-Info.plist"; sourceTree = "<group>"; };
+		2B66EB52147B7E2A00505BB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B66EB54147B7E2A00505BB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B66EB56147B7E2A00505BB5 /* DaumMapLibrarySample_iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DaumMapLibrarySample_iOS-Prefix.pch"; sourceTree = "<group>"; };
+		2B66EB57147B7E2A00505BB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B66EB58147B7E2A00505BB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B66EB5A147B7E2A00505BB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B66EB5B147B7E2A00505BB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B66EB5E147B7E2A00505BB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		2B66EB61147B7E2A00505BB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		2B66EC11147B829C00505BB5 /* custom_poi_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custom_poi_marker.png; sourceTree = "<group>"; };
+		2B66EC12147B829C00505BB5 /* custom_poi_marker_end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custom_poi_marker_end.png; sourceTree = "<group>"; };
+		2B66EC13147B829C00505BB5 /* custom_poi_marker_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custom_poi_marker_start.png; sourceTree = "<group>"; };
+		2B66EC17147B830D00505BB5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2B66EC1A147B834A00505BB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2B66EC1C147B835200505BB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2B66EC1E147B836000505BB5 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		2B66EC20147B836C00505BB5 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		2B66EC22147B837500505BB5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2B66EC24147B837F00505BB5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2B7BD9BF14ED0DCC0020F576 /* DaumMapSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaumMapSampleViewController.h; sourceTree = "<group>"; };
+		2B7BD9C014ED0DCC0020F576 /* DaumMapSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaumMapSampleViewController.m; sourceTree = "<group>"; };
+		2B7BD9C314ED0DF80020F576 /* MapPOIDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPOIDetailViewController.h; sourceTree = "<group>"; };
+		2B7BD9C414ED0DF80020F576 /* MapPOIDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPOIDetailViewController.m; sourceTree = "<group>"; };
+		2B93BA80147E435500CBEE36 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2BBE1C77162424EB002DAEAF /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		2BBE1C79162424EB002DAEAF /* copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copyright.png; sourceTree = "<group>"; };
+		2BBE1C7A162424EB002DAEAF /* detail_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail_button.png; sourceTree = "<group>"; };
+		2BBE1C7B162424EB002DAEAF /* info_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_box.png; sourceTree = "<group>"; };
+		2BBE1C7C162424EB002DAEAF /* info_box_tail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_box_tail.png; sourceTree = "<group>"; };
+		2BBE1C7D162424EB002DAEAF /* map_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin.png; sourceTree = "<group>"; };
+		2BBE1C7E162424EB002DAEAF /* map_pin_custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_custom.png; sourceTree = "<group>"; };
+		2BBE1C7F162424EB002DAEAF /* map_pin_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_red.png; sourceTree = "<group>"; };
+		2BBE1C80162424EB002DAEAF /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
+		2BBE1C81162424EB002DAEAF /* map_pinup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pinup.png; sourceTree = "<group>"; };
+		2BBE1C82162424EB002DAEAF /* map_pinup_custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pinup_custom.png; sourceTree = "<group>"; };
+		2BBE1C83162424EB002DAEAF /* map_present.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present.png; sourceTree = "<group>"; };
+		2BBE1C84162424EB002DAEAF /* map_present_background_update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_background_update.png; sourceTree = "<group>"; };
+		2BBE1C85162424EB002DAEAF /* map_present_direction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_direction.png; sourceTree = "<group>"; };
+		2BBE1C86162424EB002DAEAF /* map_present_tracking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_tracking.png; sourceTree = "<group>"; };
+		2BBE1C87162424EB002DAEAF /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage.png; sourceTree = "<group>"; };
+		2BBE1C88162424EB002DAEAF /* noimage256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage256.png; sourceTree = "<group>"; };
+		2BBE1C89162424EB002DAEAF /* point_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point_sprite.png; sourceTree = "<group>"; };
+		2BBE1C8A162424EB002DAEAF /* shadow_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow_balloon.png; sourceTree = "<group>"; };
+		2BBE1C9E16243307002DAEAF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2BBE1C9F16243307002DAEAF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B66EB41147B7E2A00505BB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF25142168FD90500522A5A /* libxml2.dylib in Frameworks */,
+				0CF25141168FD8F800522A5A /* libsqlite3.dylib in Frameworks */,
+				0CF25140168FD8EA00522A5A /* libstdc++.6.dylib in Frameworks */,
+				2B66EC25147B837F00505BB5 /* OpenGLES.framework in Frameworks */,
+				2B66EC1D147B835200505BB5 /* QuartzCore.framework in Frameworks */,
+				2B66EC1B147B834A00505BB5 /* CoreLocation.framework in Frameworks */,
+				2B66EC19147B834100505BB5 /* SystemConfiguration.framework in Frameworks */,
+				2B66EB49147B7E2A00505BB5 /* UIKit.framework in Frameworks */,
+				2B66EB4B147B7E2A00505BB5 /* Foundation.framework in Frameworks */,
+				2B66EB4D147B7E2A00505BB5 /* CoreGraphics.framework in Frameworks */,
+				2BBE1C8B162424EB002DAEAF /* DaumMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B66EB39147B7E2900505BB5 = {
+			isa = PBXGroup;
+			children = (
+				2B66EB4E147B7E2A00505BB5 /* DaumMapLibrarySample_iOS */,
+				2B66EB47147B7E2A00505BB5 /* Frameworks */,
+				2B66EB45147B7E2A00505BB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B66EB45147B7E2A00505BB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B66EB44147B7E2A00505BB5 /* DaumMapLibrarySample_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B66EB47147B7E2A00505BB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE1C76162424EB002DAEAF /* DaumMap.embeddedframework */,
+				2B66EC24147B837F00505BB5 /* OpenGLES.framework */,
+				2B66EC22147B837500505BB5 /* libsqlite3.dylib */,
+				2B66EC20147B836C00505BB5 /* libxml2.dylib */,
+				2B66EC1E147B836000505BB5 /* libstdc++.6.dylib */,
+				2B66EC1C147B835200505BB5 /* QuartzCore.framework */,
+				2B66EC1A147B834A00505BB5 /* CoreLocation.framework */,
+				2B66EC17147B830D00505BB5 /* SystemConfiguration.framework */,
+				2B66EB48147B7E2A00505BB5 /* UIKit.framework */,
+				2B66EB4A147B7E2A00505BB5 /* Foundation.framework */,
+				2B66EB4C147B7E2A00505BB5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B66EB4E147B7E2A00505BB5 /* DaumMapLibrarySample_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2B66EB57147B7E2A00505BB5 /* AppDelegate.h */,
+				2B66EB58147B7E2A00505BB5 /* AppDelegate.m */,
+				2B66EB5A147B7E2A00505BB5 /* ViewController.h */,
+				2B66EB5B147B7E2A00505BB5 /* ViewController.m */,
+				2B66EB5D147B7E2A00505BB5 /* ViewController_iPhone.xib */,
+				2B66EB60147B7E2A00505BB5 /* ViewController_iPad.xib */,
+				2B7BD9BF14ED0DCC0020F576 /* DaumMapSampleViewController.h */,
+				2B7BD9C014ED0DCC0020F576 /* DaumMapSampleViewController.m */,
+				2B7BD9C314ED0DF80020F576 /* MapPOIDetailViewController.h */,
+				2B7BD9C414ED0DF80020F576 /* MapPOIDetailViewController.m */,
+				2B66EB4F147B7E2A00505BB5 /* Supporting Files */,
+				2B66EC10147B829C00505BB5 /* resources */,
+			);
+			path = DaumMapLibrarySample_iOS;
+			sourceTree = "<group>";
+		};
+		2B66EB4F147B7E2A00505BB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE1C9E16243307002DAEAF /* Default-568h@2x.png */,
+				2BBE1C9F16243307002DAEAF /* Default@2x.png */,
+				2B93BA80147E435500CBEE36 /* Icon.png */,
+				2B66EB50147B7E2A00505BB5 /* DaumMapLibrarySample_iOS-Info.plist */,
+				2B66EB51147B7E2A00505BB5 /* InfoPlist.strings */,
+				2B66EB54147B7E2A00505BB5 /* main.m */,
+				2B66EB56147B7E2A00505BB5 /* DaumMapLibrarySample_iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B66EC10147B829C00505BB5 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B66EC11147B829C00505BB5 /* custom_poi_marker.png */,
+				2B66EC12147B829C00505BB5 /* custom_poi_marker_end.png */,
+				2B66EC13147B829C00505BB5 /* custom_poi_marker_start.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		2BBE1C76162424EB002DAEAF /* DaumMap.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE1C77162424EB002DAEAF /* DaumMap.framework */,
+				2BBE1C78162424EB002DAEAF /* Resources */,
+			);
+			name = DaumMap.embeddedframework;
+			path = DaumMapLibrarySample_iOS/DaumMap.embeddedframework;
+			sourceTree = "<group>";
+		};
+		2BBE1C78162424EB002DAEAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE1C79162424EB002DAEAF /* copyright.png */,
+				2BBE1C7A162424EB002DAEAF /* detail_button.png */,
+				2BBE1C7B162424EB002DAEAF /* info_box.png */,
+				2BBE1C7C162424EB002DAEAF /* info_box_tail.png */,
+				2BBE1C7D162424EB002DAEAF /* map_pin.png */,
+				2BBE1C7E162424EB002DAEAF /* map_pin_custom.png */,
+				2BBE1C7F162424EB002DAEAF /* map_pin_red.png */,
+				2BBE1C80162424EB002DAEAF /* map_pin_shadow.png */,
+				2BBE1C81162424EB002DAEAF /* map_pinup.png */,
+				2BBE1C82162424EB002DAEAF /* map_pinup_custom.png */,
+				2BBE1C83162424EB002DAEAF /* map_present.png */,
+				2BBE1C84162424EB002DAEAF /* map_present_background_update.png */,
+				2BBE1C85162424EB002DAEAF /* map_present_direction.png */,
+				2BBE1C86162424EB002DAEAF /* map_present_tracking.png */,
+				2BBE1C87162424EB002DAEAF /* noimage.png */,
+				2BBE1C88162424EB002DAEAF /* noimage256.png */,
+				2BBE1C89162424EB002DAEAF /* point_sprite.png */,
+				2BBE1C8A162424EB002DAEAF /* shadow_balloon.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B66EB43147B7E2A00505BB5 /* DaumMapLibrarySample_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B66EB65147B7E2A00505BB5 /* Build configuration list for PBXNativeTarget "DaumMapLibrarySample_iOS" */;
+			buildPhases = (
+				2B66EB40147B7E2A00505BB5 /* Sources */,
+				2B66EB41147B7E2A00505BB5 /* Frameworks */,
+				2B66EB42147B7E2A00505BB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaumMapLibrarySample_iOS;
+			productName = DaumMapLibrarySample_iOS;
+			productReference = 2B66EB44147B7E2A00505BB5 /* DaumMapLibrarySample_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B66EB3B147B7E2900505BB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "다음커뮤니케이션";
+			};
+			buildConfigurationList = 2B66EB3E147B7E2900505BB5 /* Build configuration list for PBXProject "DaumMapLibrarySample_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2B66EB39147B7E2900505BB5;
+			productRefGroup = 2B66EB45147B7E2A00505BB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B66EB43147B7E2A00505BB5 /* DaumMapLibrarySample_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B66EB42147B7E2A00505BB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B66EB53147B7E2A00505BB5 /* InfoPlist.strings in Resources */,
+				2B66EB5F147B7E2A00505BB5 /* ViewController_iPhone.xib in Resources */,
+				2B66EB62147B7E2A00505BB5 /* ViewController_iPad.xib in Resources */,
+				2B66EC14147B829C00505BB5 /* custom_poi_marker.png in Resources */,
+				2B66EC15147B829C00505BB5 /* custom_poi_marker_end.png in Resources */,
+				2B66EC16147B829C00505BB5 /* custom_poi_marker_start.png in Resources */,
+				2B93BA81147E435500CBEE36 /* Icon.png in Resources */,
+				2BBE1C8C162424EB002DAEAF /* copyright.png in Resources */,
+				2BBE1C8D162424EB002DAEAF /* detail_button.png in Resources */,
+				2BBE1C8E162424EB002DAEAF /* info_box.png in Resources */,
+				2BBE1C8F162424EB002DAEAF /* info_box_tail.png in Resources */,
+				2BBE1C90162424EB002DAEAF /* map_pin.png in Resources */,
+				2BBE1C91162424EB002DAEAF /* map_pin_custom.png in Resources */,
+				2BBE1C92162424EB002DAEAF /* map_pin_red.png in Resources */,
+				2BBE1C93162424EB002DAEAF /* map_pin_shadow.png in Resources */,
+				2BBE1C94162424EB002DAEAF /* map_pinup.png in Resources */,
+				2BBE1C95162424EB002DAEAF /* map_pinup_custom.png in Resources */,
+				2BBE1C96162424EB002DAEAF /* map_present.png in Resources */,
+				2BBE1C97162424EB002DAEAF /* map_present_background_update.png in Resources */,
+				2BBE1C98162424EB002DAEAF /* map_present_direction.png in Resources */,
+				2BBE1C99162424EB002DAEAF /* map_present_tracking.png in Resources */,
+				2BBE1C9A162424EB002DAEAF /* noimage.png in Resources */,
+				2BBE1C9B162424EB002DAEAF /* noimage256.png in Resources */,
+				2BBE1C9C162424EB002DAEAF /* point_sprite.png in Resources */,
+				2BBE1C9D162424EB002DAEAF /* shadow_balloon.png in Resources */,
+				2BBE1CA016243307002DAEAF /* Default-568h@2x.png in Resources */,
+				2BBE1CA116243307002DAEAF /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B66EB40147B7E2A00505BB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B66EB55147B7E2A00505BB5 /* main.m in Sources */,
+				2B66EB59147B7E2A00505BB5 /* AppDelegate.m in Sources */,
+				2B66EB5C147B7E2A00505BB5 /* ViewController.m in Sources */,
+				2B7BD9C114ED0DCC0020F576 /* DaumMapSampleViewController.m in Sources */,
+				2B7BD9C514ED0DF80020F576 /* MapPOIDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B66EB51147B7E2A00505BB5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B66EB52147B7E2A00505BB5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2B66EB5D147B7E2A00505BB5 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B66EB5E147B7E2A00505BB5 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		2B66EB60147B7E2A00505BB5 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B66EB61147B7E2A00505BB5 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B66EB63147B7E2A00505BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B66EB64147B7E2A00505BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B66EB66147B7E2A00505BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DaumMapLibrarySample_iOS/DaumMap.embeddedframework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaumMapLibrarySample_iOS/DaumMapLibrarySample_iOS-Prefix.pch";
+				INFOPLIST_FILE = "DaumMapLibrarySample_iOS/DaumMapLibrarySample_iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2B66EB67147B7E2A00505BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DaumMapLibrarySample_iOS/DaumMap.embeddedframework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaumMapLibrarySample_iOS/DaumMapLibrarySample_iOS-Prefix.pch";
+				INFOPLIST_FILE = "DaumMapLibrarySample_iOS/DaumMapLibrarySample_iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B66EB3E147B7E2900505BB5 /* Build configuration list for PBXProject "DaumMapLibrarySample_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B66EB63147B7E2A00505BB5 /* Debug */,
+				2B66EB64147B7E2A00505BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B66EB65147B7E2A00505BB5 /* Build configuration list for PBXNativeTarget "DaumMapLibrarySample_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B66EB66147B7E2A00505BB5 /* Debug */,
+				2B66EB67147B7E2A00505BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B66EB3B147B7E2900505BB5 /* Project object */;
+}

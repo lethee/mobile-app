@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="1dip" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:overScrollMode="always"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/white" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@android:id/list"
+        android:layout_alignParentLeft="true"
+        android:alpha="0.5"
+        android:background="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/button1"
+        android:background="@android:drawable/btn_default"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onDeleteButton"
+        android:text="삭제" />
+
+    <Button
+        android:background="@android:drawable/btn_default"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:onClick="onAddButton"
+        android:text="추가" />
+    
+    <Button
+        android:background="@android:drawable/btn_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onCheckDataButton"
+        android:text="데이터 확인" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>태블릿 레이아웃</title>
+  <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+  <style type="text/css">
+  .content-secondary {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .ui-content {
+      padding: 0;
+      margin: 0;
+    }
+    .content-primary {
+      float: right;
+      width: 65%;
+      margin-top: 20px;
+      margin-right: 3%;
+    }
+    .content-secondary {
+      display: block;
+      float: left;
+      width: 30%;
+      border-right: 1px solid #bbbbbb;
+    }
+    .content-secondary .ui-listview {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  </style>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="jquery.mobile-1.3.2.min.js"></script>
+  <script>
+  var controller = {
+    init: function(event) {
+      var win_width = $(window).width();
+      var device = navigator.userAgent;
+      var device_match = device.toLowerCase().match(/pad|tab/);
+
+      alert("브라우저 너비: " + win_width 
+        + "\n기기매치: " + device_match
+        + "\n기기: " + device);
+    }
+  };
+  
+  $(document).on('pageinit', controller.init);
+  </script>
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>태블릿 레이아웃</h1>
+    </div>
+    <div data-role="content">
+      <div class="content-primary">
+        <h2>Tablet-2 Page</h2>
+        <p>Page Content
+      </div>
+      <div class="content-secondary">
+        <ul data-role="listview" data-theme="c" data-dividertheme="d">
+          <li data-role="list-divider">목록</li>
+          <li><a href="tablet.html">Item 1</a></li>  
+          <li><a href="tablet-2.html">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

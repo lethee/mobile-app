@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>서울안심먹거리</title>
+  <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="jquery.mobile-1.3.2.min.js"></script>
+  <script>
+  var controller = {
+    init: function(event) {
+    },
+    search: function(event) {
+      var url = 'http://openapi.seoul.go.kr:8088';
+      var key = '4150495f323132366c6e7961726c';
+      var format = 'json';
+      var id = 'SearchGoodFoodInfoService';
+      var start = 1;
+      var end = 5;
+
+      var type = $('#type').val(); // UI로부터 선택값 가져오기
+      var local = $('#local').val(); // UI로부터 선택값 가져오기
+
+      // 공공 데이터 요청 URL 생성
+      var request = [url, key, format, id, start, end, type, local].join('/');
+      
+      // 데이터 요청 호출
+      $.get(request, function(data, textStatus, jqXHR) {
+        $('#result').html('');
+        
+        // 데이터가 문자열 형식일 경우
+        if (typeof data == 'string') {
+          $('#result').append($('<li>').text(data));
+          $('#result').listview('refresh');
+          return;
+        }
+
+        // 데이터가 JSON 형태여서 자바스크립트 객체로 읽힌 경우
+        var template = $('<li>');
+        var row = data.SearchGoodFoodInfoService.row;
+        for (var i = 0; i < row.length; i++) {
+          var tel = '02-' + row[i].CTF_TEL;
+          var name = row[i].CTF_NAME;
+          var link = '<a href="tel:02-' + tel + '"">' + name + '</a>';
+
+          var listItem = template.clone().append(link);
+          $('#result').append(listItem);
+        }
+        $('#result').listview('refresh');
+      });
+    }
+  };
+  
+  // UI 이벤트 핸들러 설정
+  $(document).on('pageinit', controller.init);
+  $('#search-button').live('tap', controller.search);
+  </script>
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>서울안심먹거리</h1>
+    </div>
+    <div data-role="content" >
+
+      <label for="type" class="select">종류</label>
+      <select name="type" id="type">
+        <option value="1">원산지표시 우수음식점</option>
+        <option value="2">안심 식육판매점</option>
+        <option value="3">안심 참기름</option>
+        <option value="4">트랜스지방 안심제과점</option>
+        <option value="5">자랑스러운 한국음식점</option>
+      </select>
+
+      <label for="local" class="select">지역</label>
+      <select name="local" id="local">
+        <option value="1">강남구</option>
+        <option value="2">강동구</option>
+        <option value="3">강북구</option>
+        <option value="4">강서구</option>
+        <option value="5">관악구</option>
+        <option value="6">광진구</option>
+        <option value="7">구로구</option>
+        <option value="8">금천구</option>
+        <option value="9">노원구</option>
+        <option value="10">도봉구</option>
+        <option value="11">동대문구</option>
+        <option value="12">동작구</option>
+        <option value="13">마포구</option>
+        <option value="14">서대문구</option>
+        <option value="15">서초구</option>
+        <option value="16">성북구</option>
+        <option value="17">양천구</option>
+        <option value="18">은평구</option>
+        <option value="19">종로구</option>
+        <option value="20">중랑구</option>
+        <option value="21">남산공원</option>
+        <option value="22">북한산공원</option>
+        <option value="23">서울대공원</option>
+        <option value="24">중구</option>
+        <option value="25">중랑구</option>
+      </select>
+
+			<button id="search-button">검색</button>
+			
+			<ul data-role="listview" data-inset="true" id="result">
+			</ul>
+    </div>
+  </div>
+</body>
+</html>

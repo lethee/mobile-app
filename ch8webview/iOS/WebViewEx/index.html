@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Local HTML!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      #messageFromNative { border: 1px solid #d0d0f0; background-color: #f0f0ff; }
+    </style>
+    <script src="jquery-1.8.0.min.js"></script>
+    <script>
+      $(function() {
+        $('#button1').click(function(){
+          window.location = 'local://userFunc2?param1=value1&param2=value2';
+        });
+      });
+      
+      function userJavaScriptFunc1(msg) {
+        $('#messageFromNative').html(msg);
+        return 'OK';
+      };
+    </script>
+  </head>
+  
+  <body>
+    <h1>Local HTML!</h1>
+    
+    <div>
+      <ul>
+        <li><a href="local://userFunc1">Call Native - 1</a></li>
+        <li><button id="button1">Call Native - 2</button></li>
+        <li><a href="http://www.apple.com">Apple (외부링크)</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <dl>
+        <dt>메시지 from 네이티브</dt>
+        <dd id="messageFromNative">(비어 있음)</dd>
+      </dl>
+    </div>
+  </body>
+</html>

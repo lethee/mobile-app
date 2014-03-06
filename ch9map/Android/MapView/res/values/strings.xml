@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">MapView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Location</string>
+    <string name="title_activity_map">MapView</string>
+    <string name="button_watch">현재위치 탐색</string>
+    <string name="button_watching">탐색 중지</string>
+
+</resources>

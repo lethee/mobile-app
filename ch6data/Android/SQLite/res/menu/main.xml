@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Add"/>
+    
+    <item
+        android:id="@+id/menu_delete"
+        android:orderInCategory="101"
+        android:showAsAction="always"
+        android:title="Delete"/>
+    
+    <item
+        android:id="@+id/menu_refresh"
+        android:orderInCategory="102"
+        android:showAsAction="always"
+        android:title="Refresh"/>
+
+</menu>

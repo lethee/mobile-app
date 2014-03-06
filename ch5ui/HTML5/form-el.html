@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form UI</title>
+  <style type="text/css">
+  #myform label { 
+    display: inline-block; 
+    font-size: 80%;
+  }
+  </style>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script>
+  $(function(){
+    // 컨트롤러
+    var controller = {
+      onButtonClick: function() {
+        var msg = 'text: ' + $('#text').val();
+        msg += '\npassword: ' + $('#pass').val();
+        msg += '\ntextarea: ' + $('#texta').val();
+        msg += '\ncheckbox: ' + $('#check').prop('checked');
+        msg += '\nradio1: ' + $('#radio1').prop('checked');
+        msg += '\nradio2: ' + $('#radio2').prop('checked');
+        msg += '\noption: ' + $('#option').val();
+
+        alert(msg);
+
+        $('#text').val( $('#text').val().toUpperCase() );
+        $('#pass').val( $('#pass').val().toUpperCase() );
+        $('#texta').val( $('#texta').val().toUpperCase() );
+
+        $('#check').prop('checked', false);
+        $('#radio1').prop('checked', false);
+        $('#radio2').prop('checked', false);
+
+        // $("#option option:first").prop("selected", "true");
+        $("#option option:eq(0)").prop("selected", "true");
+
+        return false;
+      }
+    };
+
+    // 이벤트 연결
+    $('#button').on('click', controller.onButtonClick);
+  });
+  </script>
+</head>
+
+<body>
+  <div data-role="content">
+    <form id="myform">
+      <div><label for="text">input-text:</label>
+        <input id="text" type="text"></div>
+
+      <div><label for="pass">input-password:</label>
+        <input id="pass" type="password"></div>
+
+      <div><label>input-submit:</label>
+        <input type="submit"></div>
+
+      <div><label for="texta">textarea:</label>
+        <textarea id="texta"></textarea></div>
+
+      <div><label for="check">checkbox:</label>
+        <input id="check" type="checkbox"></div>
+
+      <div><label for="radio1">radio1:</label>
+        <input id="radio1" type="radio" name="radio"></div>
+
+      <div><label for="radio2">radio2:</label>
+        <input id="radio2" type="radio" name="radio"></div>
+
+      <div><label for="option">option:</label>
+        <select id="option">
+          <option value="1">가</option>
+          <option value="2">나</option>
+          <option value="3">다</option>
+        </select>
+      </div>
+      
+      <div><label >button:</label>
+        <button id="button">버튼</button></div>
+    </form>
+  </div>
+</body>
+  
+</html>

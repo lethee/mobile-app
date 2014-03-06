@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14775E8518286D7800BFE21B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14775E8418286D7800BFE21B /* Foundation.framework */; };
+		14775E8718286D7800BFE21B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14775E8618286D7800BFE21B /* CoreGraphics.framework */; };
+		14775E8918286D7800BFE21B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14775E8818286D7800BFE21B /* UIKit.framework */; };
+		14775E8F18286D7800BFE21B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14775E8D18286D7800BFE21B /* InfoPlist.strings */; };
+		14775E9118286D7800BFE21B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14775E9018286D7800BFE21B /* main.m */; };
+		14775E9518286D7900BFE21B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14775E9418286D7900BFE21B /* AppDelegate.m */; };
+		14775E9818286D7900BFE21B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14775E9618286D7900BFE21B /* Main.storyboard */; };
+		14775E9B18286D7900BFE21B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14775E9A18286D7900BFE21B /* ViewController.m */; };
+		14775E9D18286D7900BFE21B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14775E9C18286D7900BFE21B /* Images.xcassets */; };
+		14775EA418286D7900BFE21B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14775EA318286D7900BFE21B /* XCTest.framework */; };
+		14775EA518286D7900BFE21B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14775E8418286D7800BFE21B /* Foundation.framework */; };
+		14775EA618286D7900BFE21B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14775E8818286D7800BFE21B /* UIKit.framework */; };
+		14775EAE18286D7900BFE21B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14775EAC18286D7900BFE21B /* InfoPlist.strings */; };
+		14775EB018286D7900BFE21B /* MyTodoSqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14775EAF18286D7900BFE21B /* MyTodoSqliteTests.m */; };
+		14775F3E18288CE900BFE21B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14775F3D18288CE900BFE21B /* libsqlite3.dylib */; };
+		14775F4118288E1500BFE21B /* TodoAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14775F4018288E1500BFE21B /* TodoAddViewController.m */; };
+		14775F441828A5BE00BFE21B /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14775F431828A5BE00BFE21B /* TodoItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14775EA718286D7900BFE21B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14775E7918286D7800BFE21B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14775E8018286D7800BFE21B;
+			remoteInfo = MyTodoSqlite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14775E8118286D7800BFE21B /* MyTodoSqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTodoSqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14775E8418286D7800BFE21B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14775E8618286D7800BFE21B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14775E8818286D7800BFE21B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14775E8C18286D7800BFE21B /* MyTodoSqlite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyTodoSqlite-Info.plist"; sourceTree = "<group>"; };
+		14775E8E18286D7800BFE21B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14775E9018286D7800BFE21B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14775E9218286D7900BFE21B /* MyTodoSqlite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTodoSqlite-Prefix.pch"; sourceTree = "<group>"; };
+		14775E9318286D7900BFE21B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14775E9418286D7900BFE21B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14775E9718286D7900BFE21B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14775E9918286D7900BFE21B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14775E9A18286D7900BFE21B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14775E9C18286D7900BFE21B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		14775EA218286D7900BFE21B /* MyTodoSqliteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTodoSqliteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14775EA318286D7900BFE21B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		14775EAB18286D7900BFE21B /* MyTodoSqliteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyTodoSqliteTests-Info.plist"; sourceTree = "<group>"; };
+		14775EAD18286D7900BFE21B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14775EAF18286D7900BFE21B /* MyTodoSqliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTodoSqliteTests.m; sourceTree = "<group>"; };
+		14775F3D18288CE900BFE21B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		14775F3F18288E1500BFE21B /* TodoAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoAddViewController.h; sourceTree = "<group>"; };
+		14775F4018288E1500BFE21B /* TodoAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoAddViewController.m; sourceTree = "<group>"; };
+		14775F421828A5BE00BFE21B /* TodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoItem.h; sourceTree = "<group>"; };
+		14775F431828A5BE00BFE21B /* TodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14775E7E18286D7800BFE21B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14775F3E18288CE900BFE21B /* libsqlite3.dylib in Frameworks */,
+				14775E8718286D7800BFE21B /* CoreGraphics.framework in Frameworks */,
+				14775E8918286D7800BFE21B /* UIKit.framework in Frameworks */,
+				14775E8518286D7800BFE21B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14775E9F18286D7900BFE21B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14775EA418286D7900BFE21B /* XCTest.framework in Frameworks */,
+				14775EA618286D7900BFE21B /* UIKit.framework in Frameworks */,
+				14775EA518286D7900BFE21B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14775E7818286D7800BFE21B = {
+			isa = PBXGroup;
+			children = (
+				14775E8A18286D7800BFE21B /* MyTodoSqlite */,
+				14775EA918286D7900BFE21B /* MyTodoSqliteTests */,
+				14775E8318286D7800BFE21B /* Frameworks */,
+				14775E8218286D7800BFE21B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14775E8218286D7800BFE21B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14775E8118286D7800BFE21B /* MyTodoSqlite.app */,
+				14775EA218286D7900BFE21B /* MyTodoSqliteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14775E8318286D7800BFE21B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14775F3D18288CE900BFE21B /* libsqlite3.dylib */,
+				14775E8418286D7800BFE21B /* Foundation.framework */,
+				14775E8618286D7800BFE21B /* CoreGraphics.framework */,
+				14775E8818286D7800BFE21B /* UIKit.framework */,
+				14775EA318286D7900BFE21B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14775E8A18286D7800BFE21B /* MyTodoSqlite */ = {
+			isa = PBXGroup;
+			children = (
+				14775E9318286D7900BFE21B /* AppDelegate.h */,
+				14775E9418286D7900BFE21B /* AppDelegate.m */,
+				14775E9618286D7900BFE21B /* Main.storyboard */,
+				14775E9918286D7900BFE21B /* ViewController.h */,
+				14775E9A18286D7900BFE21B /* ViewController.m */,
+				14775E9C18286D7900BFE21B /* Images.xcassets */,
+				14775E8B18286D7800BFE21B /* Supporting Files */,
+				14775F3F18288E1500BFE21B /* TodoAddViewController.h */,
+				14775F4018288E1500BFE21B /* TodoAddViewController.m */,
+				14775F421828A5BE00BFE21B /* TodoItem.h */,
+				14775F431828A5BE00BFE21B /* TodoItem.m */,
+			);
+			path = MyTodoSqlite;
+			sourceTree = "<group>";
+		};
+		14775E8B18286D7800BFE21B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14775E8C18286D7800BFE21B /* MyTodoSqlite-Info.plist */,
+				14775E8D18286D7800BFE21B /* InfoPlist.strings */,
+				14775E9018286D7800BFE21B /* main.m */,
+				14775E9218286D7900BFE21B /* MyTodoSqlite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14775EA918286D7900BFE21B /* MyTodoSqliteTests */ = {
+			isa = PBXGroup;
+			children = (
+				14775EAF18286D7900BFE21B /* MyTodoSqliteTests.m */,
+				14775EAA18286D7900BFE21B /* Supporting Files */,
+			);
+			path = MyTodoSqliteTests;
+			sourceTree = "<group>";
+		};
+		14775EAA18286D7900BFE21B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14775EAB18286D7900BFE21B /* MyTodoSqliteTests-Info.plist */,
+				14775EAC18286D7900BFE21B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14775E8018286D7800BFE21B /* MyTodoSqlite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14775EB318286D7900BFE21B /* Build configuration list for PBXNativeTarget "MyTodoSqlite" */;
+			buildPhases = (
+				14775E7D18286D7800BFE21B /* Sources */,
+				14775E7E18286D7800BFE21B /* Frameworks */,
+				14775E7F18286D7800BFE21B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTodoSqlite;
+			productName = MyTodoSqlite;
+			productReference = 14775E8118286D7800BFE21B /* MyTodoSqlite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14775EA118286D7900BFE21B /* MyTodoSqliteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14775EB618286D7900BFE21B /* Build configuration list for PBXNativeTarget "MyTodoSqliteTests" */;
+			buildPhases = (
+				14775E9E18286D7900BFE21B /* Sources */,
+				14775E9F18286D7900BFE21B /* Frameworks */,
+				14775EA018286D7900BFE21B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14775EA818286D7900BFE21B /* PBXTargetDependency */,
+			);
+			name = MyTodoSqliteTests;
+			productName = MyTodoSqliteTests;
+			productReference = 14775EA218286D7900BFE21B /* MyTodoSqliteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14775E7918286D7800BFE21B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Sean Lee";
+				TargetAttributes = {
+					14775EA118286D7900BFE21B = {
+						TestTargetID = 14775E8018286D7800BFE21B;
+					};
+				};
+			};
+			buildConfigurationList = 14775E7C18286D7800BFE21B /* Build configuration list for PBXProject "MyTodoSqlite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14775E7818286D7800BFE21B;
+			productRefGroup = 14775E8218286D7800BFE21B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14775E8018286D7800BFE21B /* MyTodoSqlite */,
+				14775EA118286D7900BFE21B /* MyTodoSqliteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14775E7F18286D7800BFE21B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14775E9D18286D7900BFE21B /* Images.xcassets in Resources */,
+				14775E8F18286D7800BFE21B /* InfoPlist.strings in Resources */,
+				14775E9818286D7900BFE21B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14775EA018286D7900BFE21B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14775EAE18286D7900BFE21B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14775E7D18286D7800BFE21B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14775F4118288E1500BFE21B /* TodoAddViewController.m in Sources */,
+				14775E9B18286D7900BFE21B /* ViewController.m in Sources */,
+				14775E9518286D7900BFE21B /* AppDelegate.m in Sources */,
+				14775E9118286D7800BFE21B /* main.m in Sources */,
+				14775F441828A5BE00BFE21B /* TodoItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14775E9E18286D7900BFE21B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14775EB018286D7900BFE21B /* MyTodoSqliteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14775EA818286D7900BFE21B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14775E8018286D7800BFE21B /* MyTodoSqlite */;
+			targetProxy = 14775EA718286D7900BFE21B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14775E8D18286D7800BFE21B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14775E8E18286D7800BFE21B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14775E9618286D7900BFE21B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14775E9718286D7900BFE21B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14775EAC18286D7900BFE21B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14775EAD18286D7900BFE21B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14775EB118286D7900BFE21B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14775EB218286D7900BFE21B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14775EB418286D7900BFE21B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTodoSqlite/MyTodoSqlite-Prefix.pch";
+				INFOPLIST_FILE = "MyTodoSqlite/MyTodoSqlite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14775EB518286D7900BFE21B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTodoSqlite/MyTodoSqlite-Prefix.pch";
+				INFOPLIST_FILE = "MyTodoSqlite/MyTodoSqlite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		14775EB718286D7900BFE21B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyTodoSqlite.app/MyTodoSqlite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTodoSqlite/MyTodoSqlite-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyTodoSqliteTests/MyTodoSqliteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		14775EB818286D7900BFE21B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyTodoSqlite.app/MyTodoSqlite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTodoSqlite/MyTodoSqlite-Prefix.pch";
+				INFOPLIST_FILE = "MyTodoSqliteTests/MyTodoSqliteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14775E7C18286D7800BFE21B /* Build configuration list for PBXProject "MyTodoSqlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14775EB118286D7900BFE21B /* Debug */,
+				14775EB218286D7900BFE21B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14775EB318286D7900BFE21B /* Build configuration list for PBXNativeTarget "MyTodoSqlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14775EB418286D7900BFE21B /* Debug */,
+				14775EB518286D7900BFE21B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14775EB618286D7900BFE21B /* Build configuration list for PBXNativeTarget "MyTodoSqliteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14775EB718286D7900BFE21B /* Debug */,
+				14775EB818286D7900BFE21B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14775E7918286D7800BFE21B /* Project object */;
+}

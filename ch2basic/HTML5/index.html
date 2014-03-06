@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="jquery.mobile-1.3.2.min.css" />
+<!--[if lt IE 9]>
+  <script src="html5.js"></script>
+<![endif]-->
+<style type="text/css">
+#container {padding: 20px;}
+</style>
+  </head>
+  <body>
+    <!-- UI -->
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Project 1</h1>
+      </div>
+
+      <div data-role="content" id="container">
+        <h2>제어</h2>
+        <div id="controls">
+          <button id="ShowButton">모델 보이기</button>
+          <button id="ClearButton">모델 삭제</button>
+        </div>
+
+        <h2>모델</h2>
+        <div id="ModelPlaceholer"></div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery.mobile-1.3.2.min.js"></script>
+    <script>
+
+    // View of MVC
+    var view = {
+      /**
+       * Render Model into View
+       */
+      render: function(model) {
+        if (model != null) {
+          var str = "Hello, " + model.content + "!";
+          $('#ModelPlaceholer').html('<p>' + str + '</p>');
+        }
+        else {
+          $('#ModelPlaceholer').html('');  
+        }
+      }
+    };
+
+    // Controller of MVC
+    var controller = {
+      init: function() {
+        $('#ShowButton').click(function(){
+          controller.show();
+        });
+        $('#ModelPlaceholer, #ClearButton').click(function(){
+          controller.clear();
+        });
+        
+        controller.show();
+      },
+      show: function(param) {
+
+        // Model of MVC
+        var greetModel = { content: "World" };
+        view.render(greetModel);
+      },
+      clear: function() {
+        view.render(null);
+      }
+    };
+
+    // DOM load event handler via jQuery
+    // not $(function() { ... });
+    // not $(document).ready(function() { ... });
+    $(document).bind('pageinit', function() {
+      controller.init();
+    });
+    </script>
+  </body>
+</html>

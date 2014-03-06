@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>리스트뷰</title>
+    <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+    <!--[if lt IE 9]><script src="html5shiv.js"></script><![endif]-->
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery.mobile-1.3.2.min.js"></script>
+  </head>
+  
+  <body>
+
+    <div data-role="page" id="listpage">
+
+      <div data-role="header">
+        <h1 id="page-h1">리스트뷰</h1>
+      </div>
+
+      <div data-role="content" class="ui-content">
+        
+        <ul data-role="listview" id="list"></ul>
+
+        <div style="height:500px;visibility:hidden;"></div>
+      </div>
+
+    </div>
+
+    <!-- 아이템뷰 템플릿 -->
+    <script id="list-item-template" type="text/x-my-template">
+      <li><a href="#">{here}</a></li>
+    </script>
+
+    <!-- 모델 & 컨트롤러 코드 -->
+    <script>
+    var model = {
+      listData: ["아이템 1", "아이템 2", "아이템 3", "아이템 4"]
+    };
+
+    var controller = {
+      
+      render: function() {
+        $('#list').empty();
+
+        for (var i = 0; i < model.listData.length; i++) {
+          var itemView = $('#list-item-template').html()
+          itemView = itemView.replace('{here}', model.listData[i]);
+
+          $('#list').append(itemView);  
+        }
+        
+        $('#list').listview('refresh'); // 추가된 아이템에 Listview 스타일 적용
+      },
+    };
+
+    $(document).on('pagebeforeshow', '#listpage', function(event, arg) {
+      controller.render();
+    });
+    </script>
+  </body>
+</html>

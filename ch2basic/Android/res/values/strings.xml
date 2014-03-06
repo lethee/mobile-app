@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">P1HelloWorld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Project 1</string>
+    <string name="text_control">제어</string>
+    <string name="text_model">모델</string>
+    <string name="button_show_model">모델 보이기</string>
+    <string name="button_clear_model">모델 삭제</string>
+
+</resources>

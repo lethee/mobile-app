@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>리스트뷰</title>
+    <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+    <!--[if lt IE 9]><script src="html5shiv.js"></script><![endif]-->
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery.mobile-1.3.2.min.js"></script>
+  </head>
+  
+  <body>
+
+    <div data-role="page">
+
+      <div data-role="header">
+        <h1 id="page-h1">리스트뷰</h1>
+      </div>
+
+      <div data-role="content">
+        
+        <ul data-role="listview" data-inset="true">
+
+          <!-- 리스트 구분자 -->
+          <li data-role="list-divider">주중</li>
+
+          <!-- 기본 스타일 아이템 -->
+          <li>월요일</li>
+
+          <!-- 숫자풍선 -->
+          <li>화요일 <span class="ui-li-count">2</span></li>
+
+          <!-- 링크 -->
+          <li><a href="#">수요일</a><a href="#">설정</a></li>
+
+          <!-- 숫자풍선, 링크, 인디케이터 아이콘 -->
+          <li data-icon="home"><a href="#">목요일 <span class="ui-li-count">4</span></a></li>
+
+          <!-- 리스트 구분자, 숫자풍선 -->
+          <li data-role="list-divider">주말 <span class="ui-li-count">2</span></li>
+
+          <!-- 제목, 부제목, 오른쪽 보조 설명 -->
+          <li>
+            <h3>금요일</h3>
+            <p>주말이 시작되는 날입니다!</p>
+            <p class="ui-li-aside">유후<strong>~!</strong></p>
+          </li>
+
+          <!-- 제목, 부제목, 중첩 아이템 -->
+          <li>
+            <h3>토요일</h3><p>날씨가 좋아야할텐데 말입니다!</p>
+            <ul>
+              <li>공연보기</li>
+              <li>자전거</li>
+              <li>대청소</li>
+            </ul>
+          </li>
+
+          <!-- 아이콘, 인디케이터 아이콘, 링크 -->
+          <li data-icon="alert"><a href="#">
+            <img src="xiao/10.png" alt="일요일" class="ui-li-icon">일요일
+          </a></li>
+
+        </ul>
+
+        <p> </p>
+      </div><!-- data-role="content" -->
+
+    </div><!-- data-role="page" -->
+
+  </body>
+</html>

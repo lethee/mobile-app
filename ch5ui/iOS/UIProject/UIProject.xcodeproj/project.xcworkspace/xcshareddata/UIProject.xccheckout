@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8DB333D2-F54E-4372-9B63-382E88B6DB3B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UIProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>32F5E406-4186-41EA-A2C8-CAB9D82B175C</key>
+		<string>ssh://bitbucket.org/lethee/mapp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ch5ui/iOS/UIProject/UIProject.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>32F5E406-4186-41EA-A2C8-CAB9D82B175C</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/lethee/mapp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>32F5E406-4186-41EA-A2C8-CAB9D82B175C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>32F5E406-4186-41EA-A2C8-CAB9D82B175C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mapp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

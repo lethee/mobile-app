@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>페이지1</title>
+    <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+    <!--[if lt IE 9]><script src="html5shiv.js"></script><![endif]-->
+    <script src="jquery-1.9.1.min.js"></script>
+    <!-- https://github.com/whitmer/store.js -->
+    <script src="jquery.store.js"></script>
+    <script src="jquery.mobile-1.3.2.min.js"></script>
+  </head>
+  
+  <body>
+
+    <!-- UI -->
+    <div data-role="page" id="page-1">
+      <div data-role="header">
+        <h1>페이지1</h1>
+      </div>
+
+      <div data-role="content">
+        <h2>Flow 프로젝트</h2>
+        <div>파일: page1.html</div>
+        <div>페이지: 페이지1</div>
+        <div>데이터: <span id="DataPlaceHolder"></span></div>
+
+        <h2>전환</h2>
+        <div><a href="page2.param.html">페이지2</a></div>
+      </div>
+    </div>
+
+    <script>
+    $('#page-1').on('pageinit', function() {
+      $.store.set('myData', '페이지 1 데이터');
+    });
+
+    $('#page-1').on('pagebeforeshow', function() {
+
+      if ($.store.disabled == false) {
+        var myDataBack = $.store.get('myDataBack');
+        $('#DataPlaceHolder').html(myDataBack);
+      } else {
+        $('#DataPlaceHolder').html('Not Supported!');
+      }
+
+    });
+
+    $('#page-2').on('pageinit', function() {
+
+      var myData = $.store.get('myData');
+      $('#DataPlaceHolder2').html(myData);
+
+      $('#back-button').click(function() {
+        $.store.set('myDataBack', '페이지 2 데이터');
+        history.back();
+      });
+
+    });
+    </script>
+  </body>
+</html>

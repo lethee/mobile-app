@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZ7-12-CSQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="FK1-S4-OtG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28s-TW-G73">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="btV-H8-f0m"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Camera" id="8ra-bG-8mq">
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="vXZ-lx-hvc" id="0Pe-R7-Cf2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Library" id="EWp-y5-vOh">
+                                        <connections>
+                                            <action selector="libraryButtonTouched:" destination="vXZ-lx-hvc" id="pNt-LU-bKx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Album" id="320-W9-Rmj">
+                                        <connections>
+                                            <action selector="albumButtonTouched:" destination="vXZ-lx-hvc" id="ejV-3L-uNC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uAq-xc-6PQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="28s-TW-G73" firstAttribute="top" secondItem="uAq-xc-6PQ" secondAttribute="bottom" id="2tV-SI-Rlj"/>
+                            <constraint firstItem="28s-TW-G73" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="4CB-lg-aEP"/>
+                            <constraint firstItem="uAq-xc-6PQ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Ipi-SG-sf5"/>
+                            <constraint firstAttribute="trailing" secondItem="uAq-xc-6PQ" secondAttribute="trailing" id="OtU-0R-CWe"/>
+                            <constraint firstItem="uAq-xc-6PQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="cen-Qp-QmD"/>
+                            <constraint firstItem="FK1-S4-OtG" firstAttribute="top" secondItem="28s-TW-G73" secondAttribute="bottom" id="ogG-U2-FaX"/>
+                            <constraint firstAttribute="trailing" secondItem="28s-TW-G73" secondAttribute="trailing" id="uBd-yB-heu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="uAq-xc-6PQ" id="bY5-38-cSW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="41"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

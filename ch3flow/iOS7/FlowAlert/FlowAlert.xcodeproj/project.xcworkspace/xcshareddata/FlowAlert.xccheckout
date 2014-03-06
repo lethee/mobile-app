@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>403BAB6F-3355-447D-A4A8-61EDC8C03EFB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FlowAlert</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4359BCA1-34CA-4861-B027-D5CDF938A076</key>
+		<string>ssh://bitbucket.org/lethee/mapp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ch3flow/iOS7/FlowAlert/FlowAlert.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4359BCA1-34CA-4861-B027-D5CDF938A076</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/lethee/mapp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4359BCA1-34CA-4861-B027-D5CDF938A076</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4359BCA1-34CA-4861-B027-D5CDF938A076</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mapp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
