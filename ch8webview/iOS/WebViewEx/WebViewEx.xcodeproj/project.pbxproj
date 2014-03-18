@@ -22,8 +22,7 @@
 		14775DE2182211B800BFE21B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14775DE0182211B800BFE21B /* InfoPlist.strings */; };
 		14775DE4182211B800BFE21B /* WebViewExTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14775DE3182211B800BFE21B /* WebViewExTests.m */; };
 		14775DEE182211C600BFE21B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 14775DED182211C600BFE21B /* index.html */; };
-		14775DF0182211F300BFE21B /* jquery-1.8.0.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 14775DEF182211F300BFE21B /* jquery-1.8.0.min.js */; };
-		14775DF11822120500BFE21B /* jquery-1.8.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 14775DEF182211F300BFE21B /* jquery-1.8.0.min.js */; };
+		1481B5B018D7FE4700B7A76E /* jquery-1.9.1.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 1481B5AF18D7FE4700B7A76E /* jquery-1.9.1.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,7 @@
 		14775DE1182211B800BFE21B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14775DE3182211B800BFE21B /* WebViewExTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewExTests.m; sourceTree = "<group>"; };
 		14775DED182211C600BFE21B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		14775DEF182211F300BFE21B /* jquery-1.8.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.8.0.min.js"; sourceTree = "<group>"; };
+		1481B5AF18D7FE4700B7A76E /* jquery-1.9.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.9.1.min.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +86,8 @@
 		14775DAC182211B800BFE21B = {
 			isa = PBXGroup;
 			children = (
+				1481B5AF18D7FE4700B7A76E /* jquery-1.9.1.min.js */,
 				14775DED182211C600BFE21B /* index.html */,
-				14775DEF182211F300BFE21B /* jquery-1.8.0.min.js */,
 				14775DBE182211B800BFE21B /* WebViewEx */,
 				14775DDD182211B800BFE21B /* WebViewExTests */,
 				14775DB7182211B800BFE21B /* Frameworks */,
@@ -235,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14775DF11822120500BFE21B /* jquery-1.8.0.min.js in Resources */,
 				14775DD1182211B800BFE21B /* Images.xcassets in Resources */,
 				14775DEE182211C600BFE21B /* index.html in Resources */,
 				14775DC3182211B800BFE21B /* InfoPlist.strings in Resources */,
@@ -258,9 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1481B5B018D7FE4700B7A76E /* jquery-1.9.1.min.js in Sources */,
 				14775DCF182211B800BFE21B /* ViewController.m in Sources */,
 				14775DC9182211B800BFE21B /* AppDelegate.m in Sources */,
-				14775DF0182211F300BFE21B /* jquery-1.8.0.min.js in Sources */,
 				14775DC5182211B800BFE21B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +468,7 @@
 				14775DE9182211B800BFE21B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14775DEA182211B800BFE21B /* Build configuration list for PBXNativeTarget "WebViewExTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +477,7 @@
 				14775DEC182211B800BFE21B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
