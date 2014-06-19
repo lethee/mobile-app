@@ -1,4 +1,12 @@
-# Mobile App Examples
+# 모바일 애플리케이션 개발 한 권으로 끝내기 - 예제 프로젝트
+
+## 도서 구입 안내
+
+<a href="http://www.infopub.co.kr/bookinfo/bookinfo.asp?sku=08000050" alt="모바일 애플리케이션 개발 한 권으로 끝내기"><img src="http://www.infopub.co.kr/G_pic/08000050_G.jpg" alt="모바일 애플리케이션 개발 한 권으로 끝내기"></a>
+
+[정보문화사 - 모바일 애플리케이션 개발 한 권으로 끝내기](http://www.infopub.co.kr/bookinfo/bookinfo.asp?sku=08000050) 페이지는 공식 책 안내 페이지 입니다. 구입할 수 있는 온라인/오프라인 서점 정보도 확인하실 수 있습니다.
+
+## 예제 안내
 
 Mobile App 예제페이지 입니다. 각 디렉토리 아래에 HTML5, Android, iOS 예제가 포함되어 있습니다. 예제 전체를 다운로드 받으시려면 위의 [Release](https://github.com/lethee/mobile-app/releases) 페이지에서 다운로드 받으실 수 있습니다. 예제가 실행되지 않거나 이상한 점을 발견하시면 이곳 [Issue 게시판](https://github.com/lethee/mobile-app/issues)에 남겨주시거나 sean@weaveus.com 으로 메일 주시면 확인하여 답변드리겠습니다.
 
